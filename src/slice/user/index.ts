@@ -1,11 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import {
-  getMe,
-  getRequestOtpRegister,
-  login, verifyOtp,
-  registerCooperate,
-  registerUser,
-  getRequestOtp,
+  login
 } from "./action";
 import { IUserState } from "./types";
 
@@ -41,48 +36,6 @@ const userSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      //#region getRequestOtpRegister
-      .addCase(getRequestOtpRegister.pending, (state: any) => {
-        state.loading = true
-      })
-      .addCase(getRequestOtpRegister.fulfilled, (state: any, action: any) => {
-        state.loading = false
-        state.requestId = action.payload.requestId
-      })
-      .addCase(getRequestOtpRegister.rejected, (state: any, action: any) => {
-        state.loading = false
-        state.requestId = ''
-      })
-      //#endregion  
-
-      //#region verifyOtp
-      .addCase(verifyOtp.pending, (state: any) => {
-        state.loading = true
-      })
-      .addCase(verifyOtp.fulfilled, (state: any, action: any) => {
-        state.loading = false
-        state.verifyOtpStatus = action.payload
-      })
-      .addCase(verifyOtp.rejected, (state: any, action: any) => {
-        state.loading = false
-        state.verifyOtpStatus = false
-      })
-      //#endregion 
-
-      //#region getMe
-      .addCase(getMe.pending, (state: IUserState) => {
-        state.loading = true;
-      })
-      .addCase(getMe.fulfilled, (state: any, action: any) => {
-        state.loading = false
-        state.currentUser = action.payload;
-      })
-      .addCase(getMe.rejected, (state: any, action: any) => {
-        state.loading = false
-        state.currentUser = null
-      })
-      //#endregion 
-
       //#region login
       .addCase(login.pending, (state: any) => {
         state.loading = true
@@ -96,51 +49,6 @@ const userSlice = createSlice({
         state.accessToken = null
       })
     //#endregion
-
-     // Register personal
-     .addCase(registerUser.pending, (state: IUserState) => {
-      state.loading = true;
-    })
-    .addCase(registerUser.fulfilled, (state: IUserState, action: any) => {
-      state.loading = false;
-      state.newUserInfo = null;
-      state.accessToken = "";
-      state.requestId = "";
-      state.phone = '';
-      state.verifyOtpStatus = false;
-    })
-    .addCase(registerUser.rejected, (state: IUserState, action: any) => {
-      state.loading = false;
-    })
-    // Register cooperate
-    .addCase(registerCooperate.pending, (state: IUserState) => {
-      state.loading = true;
-    })
-    .addCase(registerCooperate.fulfilled, (state: IUserState, action: any) => {
-      state.loading = false;
-      state.newUserInfo = null;
-      state.accessToken = "";
-      state.requestId = "";
-      state.phone = '';
-      state.verifyOtpStatus = false;
-    })
-    .addCase(registerCooperate.rejected, (state: IUserState, action: any) => {
-      state.loading = false;
-    })
-
-    //#region getRequestOtp
-    .addCase(getRequestOtp.pending, (state: any) => {
-      state.loading = true
-    })
-    .addCase(getRequestOtp.fulfilled, (state: any, action: any) => {
-      state.loading = false
-      state.requestId = action.payload.requestId
-    })
-    .addCase(getRequestOtp.rejected, (state: any, action: any) => {
-      state.loading = false
-      state.requestId = ''
-    });
-    //#endregion  
   }
 });
 

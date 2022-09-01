@@ -9,7 +9,7 @@ export interface IUserState {
     isResetPassword: false,
 }
 export interface IPayloadLogin {
-  phone: string;
+  email: string;
   password: string;
 }
 
