@@ -5,7 +5,6 @@ import SignUpWith from "components/SignIn/signupwith";
 import AlreadyHaveAccount from "components/alreadyhaveaccount";
 
 const Welcome = () => {
-  const subMessgae = "Your favorite foods delivered fast at your door";
   return (
     <div
       className="h-screen w bg-cover bg-no-repeat bg-center overflow-hidden"
@@ -22,7 +21,7 @@ const Welcome = () => {
         <Header title="Welcome to" className="mt-[181px]"></Header>
         <Header title="FoodHub" className="text-primary"></Header>
         <Subtitle
-          content={subMessgae}
+          content="Your favorite foods delivered fast at your door"
           className="ml-[30px] mt-[19px] mr-[79px]"
         ></Subtitle>
         <SignUpWith color="text-white"></SignUpWith>
