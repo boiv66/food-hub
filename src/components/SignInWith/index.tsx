@@ -1,5 +1,6 @@
-import SignUpWithOption from "./SignUpWithOption";
-
+import SignInWithButton from "./SignInWithButton";
+import Facebook from "./assets/facebook.png"; 
+import Google from "./assets/google.png"
 const SignUpWith = (props: { color: string }) => {
   return (
     <div>
@@ -9,12 +10,11 @@ const SignUpWith = (props: { color: string }) => {
         <span className="bg-white h-px w-4/12 flex-1"></span>
       </div>
       <div>
-        <SignUpWithOption></SignUpWithOption>
-        {/* <div className="mt-[23px] mx-[40px] flex">
-          <button className="rounded-[30px] border border-white text-white bg-white/30 flex-auto py-[18px] text-[17px] font-medium ">
-            Start with email or phone
-          </button>
-        </div> */}
+      <div className="flex mx-[40px] mt-[19px] space-x-[15px]"> 
+    <SignInWithButton btnName="FACEBOOK" position="top-0 left-0" src={Facebook}></SignInWithButton>
+    <SignInWithButton btnName="GOOGLE" position="top-0 left-[154px]" src={Google}></SignInWithButton>
+
+    </div>
       </div>
     </div>
   );

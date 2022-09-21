@@ -1,8 +1,8 @@
 import BackgroundWelcome from "./assets/background-image.png";
-import Header from "components/header";
-import Subtitle from "components/subtitle";
-import SignUpWith from "components/SignIn/signupwith";
-import AlreadyHaveAccount from "components/alreadyhaveaccount";
+import Header from "components/Header";
+import Subtitle from "components/Subtitle";
+import SignUpWith from "components/SignInWith";
+import AlreadyHaveAccount from "components/AlreadyHaveAccount";
 
 const Welcome = () => {
   return (
