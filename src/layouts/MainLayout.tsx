@@ -8,7 +8,7 @@ interface IMainLayoutProps {
 const MainLayout = ({ children }: IMainLayoutProps) => {
   return (
     <div>
-      <div className="vw-100 vh-100 px-20">{children}</div>
+      <div className="vw-100 vh-100">{children}</div>
     </div>
   );
 };

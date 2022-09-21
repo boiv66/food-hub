@@ -1,15 +1,10 @@
 const tinycolor = require("tinycolor2");
 
-const pxMapping = {};
-for (let i = 0; i <= 200; i++) {
-  pxMapping[i] = `${i}px`;
-}
-
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     colors: {
-      primary: "#3D7368",
+      primary: "#FE724C",
       secondary: "#000000",
       white: "#FFFFFF",
       blue: "#2F80ED",
@@ -64,7 +59,8 @@ module.exports = {
         507: "507px",
         587: "587px",
         full: "100%",
-        screen: "100vh"
+        screen: "100vh",
+        '11.5': "11.5px"
       },
       borderWidth: {
         DEFAULT: "1px",
