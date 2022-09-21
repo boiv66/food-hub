@@ -13,7 +13,6 @@ const Welcome = () => {
       }}
     >
       <div className="bg-gradient-to-t from-[#191B2F] h-screen">
-        {/* <div className="z-20"> */}
         <button className="text-primary rounded-[27.41px] px-5 py-2 bg-white my-8 absolute top-[29px] right-[27.5px] mr-4 font-semibold z-0">
           {" "}
           Skip{" "}
