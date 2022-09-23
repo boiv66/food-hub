@@ -12,12 +12,13 @@ module.exports = {
       placeholder: tinycolor("#000000").setAlpha(0.3).toRgbString(),
       skeleton: "#e2e8f0",
       background: "#EDEDED",
-      red: '#E46239',
+      red: "#E46239",
       "v-input-one": "#ecf1f0",
       "v-dot-slider": "#D9D9D9",
       "v-dot-slider-active": "#ffcc00",
       danger: "#ff3519",
-
+      labelColor: "#9796A1",
+      grayAccount: "#5B5B5E",
     },
     fontFamily: {
       primaryBold: ["Muli Bold", "sans-serif"],
@@ -60,7 +61,7 @@ module.exports = {
         587: "587px",
         full: "100%",
         screen: "100vh",
-        '11.5': "11.5px"
+        11.5: "11.5px",
       },
       borderWidth: {
         DEFAULT: "1px",
@@ -87,8 +88,8 @@ module.exports = {
         30: ["1.875rem", { lineHeight: "2.625rem" }],
         32: ["2rem", { lineHeight: "2.625rem" }],
         36: ["2.25rem", { lineHeight: "3rem" }],
-        "v-input-one": ["16px", { lineHeight: "20px", fontWeight: 400, }],
-        "v-button": ["24px", { lineHeight: "30px", fontWeight: 700, }],
+        "v-input-one": ["16px", { lineHeight: "20px", fontWeight: 400 }],
+        "v-button": ["24px", { lineHeight: "30px", fontWeight: 700 }],
       },
       fontWeight: {
         thin: "100",
@@ -112,7 +113,7 @@ module.exports = {
         sm: "0px 4px 10px rgba(0, 0, 0, 0.1)",
       },
       zIndex: {
-        '1': '1',
+        1: "1",
       },
       animation: {
         "spin-fast": "spin 700ms linear infinite",
@@ -123,7 +124,7 @@ module.exports = {
         "v-fit-content": "fit-content",
       },
       maxWidth: {
-        "507": "507px",
+        507: "507px",
         "280px": "280px",
         "427px": "427px",
         "v-left-sign-in": "587px",
@@ -143,7 +144,7 @@ module.exports = {
         "v-badge": ["6px 20px"],
       },
       margin: {
-        "v-input-icon": ["18px 26px 18px 0"]
+        "v-input-icon": ["18px 26px 18px 0"],
       },
     },
   },

@@ -1,5 +1,9 @@
-const Header = (props: {title:string, className: string}) => {
-    return (<h1 className={`font-bold text-[45px] ml-[30px] ${props.className}`}>{props.title}</h1>)
+interface IHeaderProps {
+  title: string;
+  className?: string;
 }
+const Header = ({ className, title }: IHeaderProps) => {
+  return <h1 className={`font-bold ml-7 ${className}`}>{title}</h1>;
+};
 
-export default Header; 
+export default Header;

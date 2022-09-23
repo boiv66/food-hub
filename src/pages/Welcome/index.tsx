@@ -17,13 +17,13 @@ const Welcome = () => {
           {" "}
           Skip{" "}
         </button>
-        <Header title="Welcome to" className="mt-[181px]"></Header>
-        <Header title="FoodHub" className="text-primary"></Header>
+        <Header title="Welcome to" className="mt-[181px]  text-[45px]"></Header>
+        <Header title="FoodHub" className="text-primary  text-[45px]"></Header>
         <Subtitle
           content="Your favorite foods delivered fast at your door"
-          className="ml-[30px] mt-[19px] mr-[79px]"
+          className="ml-[30px] mt-[19px] mr-[79px] "
         ></Subtitle>
-        <SignUpWith color="text-white"></SignUpWith>
+        <SignUpWith color={{text:"text-white", divider: "bg-white"}} className="mt-48"></SignUpWith>
         {/* </div> */}
         <div className="mt-[23px] mx-[40px] flex">
           <button className="rounded-[30px] border border-white text-white bg-white/30 flex-auto py-[18px] text-[17px] font-medium ">
