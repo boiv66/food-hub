@@ -1,7 +1,14 @@
-const AlreadyHaveAccount = (props: {option: {content: string, color: string }, color: string, className: string}) => {
+interface IAlreadyHaveAccountProp{
+  option: {content: string, color?: string}, 
+  color: string, 
+  className: string
+}
+
+
+const AlreadyHaveAccount = ({option, color, className}: IAlreadyHaveAccountProp) => {
   return (
-    <div className={`flex ${props.color} ${props.className}`}>
-      <p >Already have an account? {<span className={`border-b ${props.option.color}`}>{props.option.content}</span>} </p>
+    <div className={`flex ${color} ${className}`}>
+      <p >Already have an account? {<span className={`border-b ${option.color}`}>{option.content}</span>} </p>
      
     </div>
   );

@@ -1,13 +1,21 @@
 import SignInWithButton from "./SignInWithButton";
 import Facebook from "./assets/facebook.png"; 
 import Google from "./assets/google.png"
-const SignUpWith = (props: { color: string }) => {
+
+interface ISignInWithProps{
+  color: {
+    text: string, 
+    divider: string
+  }
+  className: string
+}
+const SignInWith = ({color, className}: ISignInWithProps) => {
   return (
     <div>
-      <div className={`flex mx-[40px] mt-[191px] ${props.color} items-center`}>
-        <span className="bg-white h-px w-4/12 flex-1 "></span>
-        <p className="flex-auto text-14 text-center">sign in with</p>
-        <span className="bg-white h-px w-4/12 flex-1"></span>
+      <div className={`flex mx-[40px] ${className} ${color.text} items-center`}>
+        <span className={`${color.divider} h-px w-4/12 flex-1 `}></span>
+        <p className="flex-auto text-14 text-center">Sign in with</p>
+        <span className={`${color.divider} h-px w-4/12 flex-1`}></span>
       </div>
       <div>
       <div className="flex mx-[40px] mt-[19px] space-x-[15px]"> 
@@ -19,4 +27,4 @@ const SignUpWith = (props: { color: string }) => {
     </div>
   );
 };
-export default SignUpWith;
+export default SignInWith;
