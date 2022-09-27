@@ -7,7 +7,7 @@ interface ISignInWithProps{
     text: string, 
     divider: string
   }
-  className: string
+  className?: string
 }
 const SignInWith = ({color, className}: ISignInWithProps) => {
   return (

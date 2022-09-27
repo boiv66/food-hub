@@ -30,7 +30,7 @@ const Welcome = () => {
             Start with email or phone
           </button>
         </div>
-        <AlreadyHaveAccount className="mx-[79px] mt-[28px] text-sm" option={{content: "Sign In", color: "text-white"}} color="text-white"></AlreadyHaveAccount>
+        <AlreadyHaveAccount className="mx-[79px] mt-[28px] text-sm" option={{content: "Sign In", color: "text-white"}} color="text-white" text="Already have an account? "></AlreadyHaveAccount>
       </div>
     </div>
   );

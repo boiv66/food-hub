@@ -17,9 +17,9 @@ const SignUp = () => {
       <AlreadyHaveAccount
         color="text-grayAccount"
         className="mx-20 mt-8 font-medium"
-        option={{ color: "text-primary", content: "Login" }}
+        option={{ color: "text-primary", content: "Login" }} text= "Already have an account? "
       ></AlreadyHaveAccount>
-      <SignInWith color={{text:"text-grayAccount", divider: "bg-grayAccount"}}className="mt-6"></SignInWith>
+      <SignInWith color={{text:"text-grayAccount", divider: "bg-[#B3B3B3] bg-opacity-50"}}className="mt-6"></SignInWith>
     </div>
   );
 };
